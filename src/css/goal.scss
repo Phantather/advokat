@@ -1,0 +1,55 @@
+.goal {
+  padding-top: 60px;
+
+  &__content {
+    display: flex;
+    position: relative;
+    top: 5px;
+  }
+  &__block {
+    padding: 56px 45px 80px;
+    background: #EBEFF4;
+    border-radius: 16px;
+    height: 505px;
+    text-align: center;
+    &-title {
+      font-family: 'Merriweather', serif;
+      font-size: 20px;
+      line-height: 25px;
+      color: $blue;
+    }
+    &-text {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 38px;
+      color: #172141;
+      margin-top: 51px;
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .goal__block-text {
+    font-size: 20px;
+    line-height: 33px;
+  }
+}
+
+@media (max-width: 991px) {
+  .goal__block-text {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 768px) {
+  .goal {
+    padding-bottom: 60px;
+  }
+  .goal__block {
+    height: 353px;
+  }
+  .goal__left {
+    display: none;
+  }
+}

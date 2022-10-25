@@ -1,0 +1,70 @@
+.staff {
+  padding: 111px 0 95px;
+  &__title {
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: $blue;
+    margin-bottom: 50px;
+  }
+  &__card {
+    background: #172141;
+    border-radius: 16px;
+    padding: 225px 31px 60px;
+    text-align: left;
+    position: relative;
+    &::before {
+      content: url("../images/staff/bg.png");
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &-title {
+      font-family: 'Merriweather', serif;
+      font-size: 24px;
+      line-height: 30px;
+      color: #FFFFFF;
+      margin: 15px 0 17px;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+      padding-left: 18px;
+      margin-bottom: 21px;
+    }
+    &-item {
+      list-style-type: disc;
+      font-size: 14px;
+      line-height: 26px;
+      color: #EBEFF4;
+    }
+  }
+}
+
+.staff .swiper-slide img {
+  display: block;
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .staff__card::before {
+    left: 50%;
+    transform: translateX(-40%);
+  }
+}
+
+@media (max-width: 768px) {
+  .staff__card {
+    padding-top: 60px;
+  }
+  .staff__card::before {
+    display: none;
+  }
+}

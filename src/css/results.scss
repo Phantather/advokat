@@ -1,0 +1,71 @@
+.results {
+  padding: 96px 0 128px;
+  background: url("../images/results/resuktsbg.png") center/cover no-repeat fixed;
+  position: relative;
+  text-align: center;
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(27.92% 49.89% at 65.16% 60.6%, #3273C0 12.4%, #2F5691 100%), #2F5691;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &__desc {
+    font-size: 16px;
+    line-height: 178.19%;
+    margin: 30px 0 45px;
+  }
+  &__icons {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  &__slide {
+    margin-top: 45px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 84px 99px;
+
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-scrollbar-drag {
+  background-color: #2F5691;
+}

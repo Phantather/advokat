@@ -1,0 +1,580 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 1169px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  font-family: "Merriweather", serif;
+  font-size: 40px;
+  line-height: 50px;
+  color: #D8AB68;
+  text-align: center;
+}
+
+.btn {
+  padding: 21px 42px;
+  background: -webkit-gradient(linear, left top, right top, from(#DBA75B), color-stop(53.39%, #FBD166), to(#DBA75B));
+  background: linear-gradient(90deg, #DBA75B 0%, #FBD166 53.39%, #DBA75B 100%);
+  -webkit-box-shadow: 0 5px 0 #C88F3D, 0 6px 16px rgba(200, 143, 61, 0.7);
+          box-shadow: 0 5px 0 #C88F3D, 0 6px 16px rgba(200, 143, 61, 0.7);
+  border-radius: 60px;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.home {
+  padding: 34px 0 57px;
+  background: url("../images/home/HomeBg.png") center/cover no-repeat;
+}
+
+.home__title {
+  font-family: "Merriweather", sans-serif;
+  font-size: 66px;
+  line-height: 83px;
+  margin: 2px 0 32px;
+}
+
+.home__subtitle {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 124px;
+}
+
+.home__call {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.home__links {
+  margin: 17px 0 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 11px;
+     -moz-column-gap: 11px;
+          column-gap: 11px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home__link_tel {
+  font-size: 36px;
+}
+
+.header {
+  padding: 53px 0;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #172141;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 35px 0;
+  }
+
+  .header__link {
+    font-size: 15px;
+  }
+}
+.experience {
+  padding: 97px 0 171px;
+}
+.experience__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+.experience__left {
+  width: 30%;
+  background: #172141;
+  border-radius: 16px;
+  border-right: 16px solid #2F5691;
+  padding: 212px 9px 35px 37px;
+  position: relative;
+  overflow: hidden;
+}
+.experience__left::after {
+  content: url("../images/experience/topimg.png");
+  width: 100%;
+  height: 237px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.experience__title {
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+  line-height: 30px;
+}
+.experience__list {
+  padding-left: 20px;
+  margin-top: 30px;
+}
+.experience__item {
+  list-style-type: circle;
+  font-size: 14px;
+  line-height: 26px;
+}
+.experience__right {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+.experience__card {
+  width: calc(50% - 15px);
+  background: #EBEFF4;
+  border-radius: 16px;
+  padding: 148px 0 12px 26px;
+  position: relative;
+  overflow: hidden;
+}
+.experience__card-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.experience__card-icon {
+  position: absolute;
+  top: -17px;
+  left: -17px;
+  background-color: #2F5691;
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+.experience__card-icon:hover {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  width: 110%;
+  height: 110%;
+  border-radius: 0;
+}
+.experience__card-text {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  line-height: 25px;
+  color: #2F5691;
+}
+
+@media (max-width: 768px) {
+  .experience__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 20px;
+  }
+
+  .experience__left {
+    width: 50%;
+  }
+
+  .experience__right {
+    width: 100%;
+  }
+}
+.results {
+  padding: 96px 0 128px;
+  background: url("../images/results/resuktsbg.png") center/cover no-repeat fixed;
+  position: relative;
+  text-align: center;
+}
+.results::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(27.92% 49.89% at 65.16% 60.6%, #3273C0 12.4%, #2F5691 100%), #2F5691;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.results__desc {
+  font-size: 16px;
+  line-height: 178.19%;
+  margin: 30px 0 45px;
+}
+.results__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.results__slide {
+  margin-top: 45px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  padding: 84px 99px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-scrollbar-drag {
+  background-color: #2F5691;
+}
+
+.directions {
+  padding: 32px 0 83px;
+  background: url("../images/directions/bg.png") center/cover no-repeat fixed;
+  position: relative;
+}
+.directions::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(27.92% 49.89% at 65.16% 60.6%, #3273C0 12.4%, #2F5691 100%), #2F5691;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.directions__list {
+  margin-top: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+.directions__item {
+  padding: 18px 28px;
+  border: 2px solid #FFFFFF;
+  border-radius: 60px;
+  cursor: pointer;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.directions__item:hover {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  color: #C88F3D;
+}
+.directions__content {
+  display: none;
+  background: #FFFFFF;
+  border-radius: 30px;
+  margin-top: 28px;
+}
+.directions__content.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.directions__left {
+  width: 60%;
+  padding: 41px 90px 21px 70px;
+}
+.directions__left-title {
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2F5691;
+  margin-bottom: 28px;
+}
+.directions__left-subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #172141;
+}
+.directions__left-list {
+  margin: 10px 0;
+  padding-left: 15px;
+}
+.directions__left-item {
+  font-size: 12px;
+  line-height: 26px;
+  color: #6F737D;
+  list-style-type: disc;
+}
+.directions__left-item.active {
+  color: #C88F3D;
+}
+.directions__left-exp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 70px;
+     -moz-column-gap: 70px;
+          column-gap: 70px;
+  margin-bottom: 10px;
+}
+.directions__left-num {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 60px;
+  color: #2F5691;
+}
+.directions__left-num sup {
+  color: #2F5691;
+}
+.directions__left-desc {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #172141;
+}
+.directions__right {
+  width: 40%;
+  position: relative;
+}
+.directions__right-img {
+  width: 100%;
+  height: 100%;
+}
+.directions__right-after {
+  position: absolute;
+  bottom: 45px;
+  right: 31px;
+}
+
+@media (max-width: 1024px) {
+  .directions__right-after {
+    width: 100%;
+    bottom: 120px;
+    right: 56px;
+  }
+}
+@media (max-width: 768px) {
+  .directions__right {
+    display: none;
+  }
+
+  .directions__left {
+    width: 100%;
+  }
+}
+.goal {
+  padding-top: 60px;
+}
+.goal__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 5px;
+}
+.goal__block {
+  padding: 56px 45px 80px;
+  background: #EBEFF4;
+  border-radius: 16px;
+  height: 505px;
+  text-align: center;
+}
+.goal__block-title {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  line-height: 25px;
+  color: #2F5691;
+}
+.goal__block-text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 38px;
+  color: #172141;
+  margin-top: 51px;
+}
+
+@media (max-width: 1024px) {
+  .goal__block-text {
+    font-size: 20px;
+    line-height: 33px;
+  }
+}
+@media (max-width: 991px) {
+  .goal__block-text {
+    font-size: 19px;
+  }
+}
+@media (max-width: 768px) {
+  .goal {
+    padding-bottom: 60px;
+  }
+
+  .goal__block {
+    height: 353px;
+  }
+
+  .goal__left {
+    display: none;
+  }
+}
+.staff {
+  padding: 111px 0 95px;
+}
+.staff__title {
+  font-family: "Merriweather", serif;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #2F5691;
+  margin-bottom: 50px;
+}
+.staff__card {
+  background: #172141;
+  border-radius: 16px;
+  padding: 225px 31px 60px;
+  text-align: left;
+  position: relative;
+}
+.staff__card::before {
+  content: url("../images/staff/bg.png");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.staff__card-title {
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin: 15px 0 17px;
+}
+.staff__card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 4px;
+  padding-left: 18px;
+  margin-bottom: 21px;
+}
+.staff__card-item {
+  list-style-type: disc;
+  font-size: 14px;
+  line-height: 26px;
+  color: #EBEFF4;
+}
+
+.staff .swiper-slide img {
+  display: block;
+  width: 80%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .staff__card::before {
+    left: 50%;
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+  }
+}
+@media (max-width: 768px) {
+  .staff__card {
+    padding-top: 60px;
+  }
+
+  .staff__card::before {
+    display: none;
+  }
+}

@@ -1,0 +1,29 @@
+.header {
+  padding: 53px 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 50%);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #172141;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 35px 0;
+  }
+  .header__link {
+    font-size: 15px;
+  }
+}

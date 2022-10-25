@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+$blue : #2F5691;
+
+.container{
+  max-width: 1169px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  font-family: 'Merriweather', serif;
+  font-size: 40px;
+  line-height: 50px;
+  color: #D8AB68;
+  text-align: center;
+}
+
+.btn{
+  padding: 21px 42px;
+  background: linear-gradient(90deg, #DBA75B 0%, #FBD166 53.39%, #DBA75B 100%);
+  box-shadow: 0 5px 0 #C88F3D, 0 6px 16px rgba(200, 143, 61, 0.7);
+  border-radius: 60px;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+@import "home";
+@import "header";
+@import "experience";
+@import "results";
+@import "direcrions";
+@import "goal";
+@import "staff";
